@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package test;
+
+option go_package = "github.com/khbdev/arena-startup-proto/proto/test/testpb";
+
+service TestSectionService {
+  rpc CreateTest(CreateTestRequest) returns (CreateTestResponse);
+  rpc GetTest(GetTestRequest) returns (GetTestResponse);
+}
+
+message CreateTestRequest {
+  int64 teacher_telegram_id = 1;
+  string test_id = 2;
+  repeated Question questions = 3;
+}
+
+message CreateTestResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message GetTestRequest {
+  int64 telegram_id = 1;
+  string test_id = 2;
+}
+
+message GetTestResponse {
+  repeated Question questions = 1;
+  string message = 2;
+}
+
+message Question {
+  string question = 1;
+  repeated string variants = 2;
+  string correct_answer = 3; 
+}
