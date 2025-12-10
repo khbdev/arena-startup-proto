@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.9
 // 	protoc        v3.21.12
-// source: proto/testSection/test_section.proto
+// source: proto/testsection/testsection.proto
 
 package testsectionpb
 
@@ -33,7 +33,7 @@ type CreateTestRequest struct {
 
 func (x *CreateTestRequest) Reset() {
 	*x = CreateTestRequest{}
-	mi := &file_proto_testSection_test_section_proto_msgTypes[0]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -45,7 +45,7 @@ func (x *CreateTestRequest) String() string {
 func (*CreateTestRequest) ProtoMessage() {}
 
 func (x *CreateTestRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_testSection_test_section_proto_msgTypes[0]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *CreateTestRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateTestRequest.ProtoReflect.Descriptor instead.
 func (*CreateTestRequest) Descriptor() ([]byte, []int) {
-	return file_proto_testSection_test_section_proto_rawDescGZIP(), []int{0}
+	return file_proto_testsection_testsection_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *CreateTestRequest) GetTeacherTelegramId() int64 {
@@ -93,7 +93,7 @@ type CreateTestResponse struct {
 
 func (x *CreateTestResponse) Reset() {
 	*x = CreateTestResponse{}
-	mi := &file_proto_testSection_test_section_proto_msgTypes[1]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -105,7 +105,7 @@ func (x *CreateTestResponse) String() string {
 func (*CreateTestResponse) ProtoMessage() {}
 
 func (x *CreateTestResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_testSection_test_section_proto_msgTypes[1]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -118,7 +118,7 @@ func (x *CreateTestResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateTestResponse.ProtoReflect.Descriptor instead.
 func (*CreateTestResponse) Descriptor() ([]byte, []int) {
-	return file_proto_testSection_test_section_proto_rawDescGZIP(), []int{1}
+	return file_proto_testsection_testsection_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *CreateTestResponse) GetSuccess() bool {
@@ -146,7 +146,7 @@ type GetTestRequest struct {
 
 func (x *GetTestRequest) Reset() {
 	*x = GetTestRequest{}
-	mi := &file_proto_testSection_test_section_proto_msgTypes[2]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -158,7 +158,7 @@ func (x *GetTestRequest) String() string {
 func (*GetTestRequest) ProtoMessage() {}
 
 func (x *GetTestRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_testSection_test_section_proto_msgTypes[2]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -171,7 +171,7 @@ func (x *GetTestRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTestRequest.ProtoReflect.Descriptor instead.
 func (*GetTestRequest) Descriptor() ([]byte, []int) {
-	return file_proto_testSection_test_section_proto_rawDescGZIP(), []int{2}
+	return file_proto_testsection_testsection_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *GetTestRequest) GetTelegramId() int64 {
@@ -199,7 +199,7 @@ type GetTestResponse struct {
 
 func (x *GetTestResponse) Reset() {
 	*x = GetTestResponse{}
-	mi := &file_proto_testSection_test_section_proto_msgTypes[3]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -211,7 +211,7 @@ func (x *GetTestResponse) String() string {
 func (*GetTestResponse) ProtoMessage() {}
 
 func (x *GetTestResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_testSection_test_section_proto_msgTypes[3]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -224,7 +224,7 @@ func (x *GetTestResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTestResponse.ProtoReflect.Descriptor instead.
 func (*GetTestResponse) Descriptor() ([]byte, []int) {
-	return file_proto_testSection_test_section_proto_rawDescGZIP(), []int{3}
+	return file_proto_testsection_testsection_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *GetTestResponse) GetQuestions() []*Question {
@@ -254,7 +254,7 @@ type Question struct {
 
 func (x *Question) Reset() {
 	*x = Question{}
-	mi := &file_proto_testSection_test_section_proto_msgTypes[4]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -266,7 +266,7 @@ func (x *Question) String() string {
 func (*Question) ProtoMessage() {}
 
 func (x *Question) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_testSection_test_section_proto_msgTypes[4]
+	mi := &file_proto_testsection_testsection_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -279,7 +279,7 @@ func (x *Question) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Question.ProtoReflect.Descriptor instead.
 func (*Question) Descriptor() ([]byte, []int) {
-	return file_proto_testSection_test_section_proto_rawDescGZIP(), []int{4}
+	return file_proto_testsection_testsection_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *Question) GetQuestion() string {
@@ -303,11 +303,11 @@ func (x *Question) GetCorrectAnswer() string {
 	return ""
 }
 
-var File_proto_testSection_test_section_proto protoreflect.FileDescriptor
+var File_proto_testsection_testsection_proto protoreflect.FileDescriptor
 
-const file_proto_testSection_test_section_proto_rawDesc = "" +
+const file_proto_testsection_testsection_proto_rawDesc = "" +
 	"\n" +
-	"$proto/testSection/test_section.proto\x12\x04test\"\x8a\x01\n" +
+	"#proto/testsection/testsection.proto\x12\x04test\"\x8a\x01\n" +
 	"\x11CreateTestRequest\x12.\n" +
 	"\x13teacher_telegram_id\x18\x01 \x01(\x03R\x11teacherTelegramId\x12\x17\n" +
 	"\atest_id\x18\x02 \x01(\tR\x06testId\x12,\n" +
@@ -332,26 +332,26 @@ const file_proto_testSection_test_section_proto_rawDesc = "" +
 	"\aGetTest\x12\x14.test.GetTestRequest\x1a\x15.test.GetTestResponseBGZEgithub.com/khbdev/arena-startup-proto/proto/testsection/testsectionpbb\x06proto3"
 
 var (
-	file_proto_testSection_test_section_proto_rawDescOnce sync.Once
-	file_proto_testSection_test_section_proto_rawDescData []byte
+	file_proto_testsection_testsection_proto_rawDescOnce sync.Once
+	file_proto_testsection_testsection_proto_rawDescData []byte
 )
 
-func file_proto_testSection_test_section_proto_rawDescGZIP() []byte {
-	file_proto_testSection_test_section_proto_rawDescOnce.Do(func() {
-		file_proto_testSection_test_section_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_testSection_test_section_proto_rawDesc), len(file_proto_testSection_test_section_proto_rawDesc)))
+func file_proto_testsection_testsection_proto_rawDescGZIP() []byte {
+	file_proto_testsection_testsection_proto_rawDescOnce.Do(func() {
+		file_proto_testsection_testsection_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_testsection_testsection_proto_rawDesc), len(file_proto_testsection_testsection_proto_rawDesc)))
 	})
-	return file_proto_testSection_test_section_proto_rawDescData
+	return file_proto_testsection_testsection_proto_rawDescData
 }
 
-var file_proto_testSection_test_section_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
-var file_proto_testSection_test_section_proto_goTypes = []any{
+var file_proto_testsection_testsection_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
+var file_proto_testsection_testsection_proto_goTypes = []any{
 	(*CreateTestRequest)(nil),  // 0: test.CreateTestRequest
 	(*CreateTestResponse)(nil), // 1: test.CreateTestResponse
 	(*GetTestRequest)(nil),     // 2: test.GetTestRequest
 	(*GetTestResponse)(nil),    // 3: test.GetTestResponse
 	(*Question)(nil),           // 4: test.Question
 }
-var file_proto_testSection_test_section_proto_depIdxs = []int32{
+var file_proto_testsection_testsection_proto_depIdxs = []int32{
 	4, // 0: test.CreateTestRequest.questions:type_name -> test.Question
 	4, // 1: test.GetTestResponse.questions:type_name -> test.Question
 	0, // 2: test.TestSectionService.CreateTest:input_type -> test.CreateTestRequest
@@ -365,26 +365,26 @@ var file_proto_testSection_test_section_proto_depIdxs = []int32{
 	0, // [0:2] is the sub-list for field type_name
 }
 
-func init() { file_proto_testSection_test_section_proto_init() }
-func file_proto_testSection_test_section_proto_init() {
-	if File_proto_testSection_test_section_proto != nil {
+func init() { file_proto_testsection_testsection_proto_init() }
+func file_proto_testsection_testsection_proto_init() {
+	if File_proto_testsection_testsection_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_testSection_test_section_proto_rawDesc), len(file_proto_testSection_test_section_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_testsection_testsection_proto_rawDesc), len(file_proto_testsection_testsection_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   5,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_proto_testSection_test_section_proto_goTypes,
-		DependencyIndexes: file_proto_testSection_test_section_proto_depIdxs,
-		MessageInfos:      file_proto_testSection_test_section_proto_msgTypes,
+		GoTypes:           file_proto_testsection_testsection_proto_goTypes,
+		DependencyIndexes: file_proto_testsection_testsection_proto_depIdxs,
+		MessageInfos:      file_proto_testsection_testsection_proto_msgTypes,
 	}.Build()
-	File_proto_testSection_test_section_proto = out.File
-	file_proto_testSection_test_section_proto_goTypes = nil
-	file_proto_testSection_test_section_proto_depIdxs = nil
+	File_proto_testsection_testsection_proto = out.File
+	file_proto_testsection_testsection_proto_goTypes = nil
+	file_proto_testsection_testsection_proto_depIdxs = nil
 }
