@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.21.12
-// source: proto/test/test.proto
+// source: proto/testSection/test_section.proto
 
-package testpb
+package testsectionpb
 
 import (
 	context "context"
@@ -26,6 +26,8 @@ const (
 // TestSectionServiceClient is the client API for TestSectionService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+//
+// gRPC service
 type TestSectionServiceClient interface {
 	CreateTest(ctx context.Context, in *CreateTestRequest, opts ...grpc.CallOption) (*CreateTestResponse, error)
 	GetTest(ctx context.Context, in *GetTestRequest, opts ...grpc.CallOption) (*GetTestResponse, error)
@@ -62,6 +64,8 @@ func (c *testSectionServiceClient) GetTest(ctx context.Context, in *GetTestReque
 // TestSectionServiceServer is the server API for TestSectionService service.
 // All implementations must embed UnimplementedTestSectionServiceServer
 // for forward compatibility.
+//
+// gRPC service
 type TestSectionServiceServer interface {
 	CreateTest(context.Context, *CreateTestRequest) (*CreateTestResponse, error)
 	GetTest(context.Context, *GetTestRequest) (*GetTestResponse, error)
@@ -155,5 +159,5 @@ var TestSectionService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "proto/test/test.proto",
+	Metadata: "proto/testSection/test_section.proto",
 }

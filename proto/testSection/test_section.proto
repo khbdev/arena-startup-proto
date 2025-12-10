@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package test;
+
+option go_package = "github.com/khbdev/arena-startup-proto/proto/testsection/testsectionpb";
+
+// gRPC service
+service TestSectionService {
+  rpc CreateTest(CreateTestRequest) returns (CreateTestResponse);
+  rpc GetTest(GetTestRequest) returns (GetTestResponse);
+}
+
+// Test yaratish request
+message CreateTestRequest {
+  int64 teacher_telegram_id = 1;
+  string test_id = 2;
+  repeated Question questions = 3; // JSON massiv sifatida yuboriladi
+}
+
+// Test yaratish response
+message CreateTestResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// Test olish request
+message GetTestRequest {
+  int64 telegram_id = 1;
+  string test_id = 2;
+}
+
+// Test olish response
+message GetTestResponse {
+  repeated Question questions = 1; // Shu massivni qaytaradi
+  string message = 2;
+}
+
+// Question (Redisdagi JSON massivdan olingan)
+// options => variants []string ga convert qilinadi service layerda
+message Question {
+  string question = 1;
+  repeated string variants = 2;      // faqat textlarini olamiz
+  string correct_answer = 3;         // Telegram ID mos kelmasa, bo‘sh string beriladi
+}
