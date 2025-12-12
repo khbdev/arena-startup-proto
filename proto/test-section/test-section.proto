@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package result;
+
+option go_package = "github.com/khbdev/arena-startup-proto/proto/test-section/test-sectionpb";
+
+
+service ResultService {
+  rpc GetUserTestResult(GetUserTestResultRequest) returns (GetUserTestResultResponse);
+}
+
+
+message GetUserTestResultRequest {
+  int64 telegram_id = 1; 
+  string test_id = 2;    
+}
+
+
+message GetUserTestResultResponse {
+  string json_data = 1; 
+}
